@@ -1,0 +1,16 @@
+<template>
+  <div class="toolbar">
+    <button onclick={setDrawMode}>✏️ Draw</button>
+    <button onclick={setEraseMode}>🧽 Erase</button>
+    <button onclick={clearCanvas}>🗑️ Clear</button>
+  </div>
+  <canvas
+    class="draw-canvas"
+    width="800"
+    height="500"
+    onmousedown={startDrawing}
+    onmouseup={stopDrawing}
+    onmouseleave={stopDrawing}
+    onmousemove={draw}
+  ></canvas>
+</template>

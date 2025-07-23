@@ -1,0 +1,15 @@
+.draw-canvas {
+  border: 2px solid #ccc;
+  background: #fff;
+  cursor: crosshair;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+}

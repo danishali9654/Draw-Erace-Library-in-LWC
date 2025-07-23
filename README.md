@@ -1,7 +1,7 @@
 **LWC Draw & Erase Tool**
 This Lightning Web Component (LWC) provides a simple drawing interface using the HTML5 <canvas> element. It allows users to draw, erase, and clear directly on the canvas using mouse interactions.
 
-**Features**
+**Features**</br>
 ✏️ Draw Mode – Freehand drawing with a pencil tool
 
 🧽 Erase Mode – Erase strokes with a white brush

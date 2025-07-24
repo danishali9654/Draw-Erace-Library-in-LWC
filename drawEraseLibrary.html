@@ -2,15 +2,21 @@
   <div class="toolbar">
     <button onclick={setDrawMode}>✏️ Draw</button>
     <button onclick={setEraseMode}>🧽 Erase</button>
+    <button onclick={setTextMode}>🔤 Text</button>
     <button onclick={clearCanvas}>🗑️ Clear</button>
+
+    <label class="color-picker-label">
+      🎨 Color:
+      <input type="color" value={color} onchange={handleColorChange} />
+    </label>
   </div>
+
   <canvas
     class="draw-canvas"
     width="800"
     height="500"
-    onmousedown={startDrawing}
-    onmouseup={stopDrawing}
-    onmouseleave={stopDrawing}
-    onmousemove={draw}
+    onmousedown={handleMouseDown}
+    onmouseup={handleMouseUp}
+    onmousemove={handleMouseMove}
   ></canvas>
 </template>
